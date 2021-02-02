@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="TitleTableViewHeaderView" id="afj-e7-lNE" customClass="TitleTableViewHeaderView" customModule="KomoriOto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8x0-AH-P86">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="e9S-HH-yJL"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="e9S-HH-yJL" firstAttribute="trailing" secondItem="8x0-AH-P86" secondAttribute="trailing" id="Fey-PQ-JZ0"/>
+                <constraint firstItem="8x0-AH-P86" firstAttribute="top" secondItem="afj-e7-lNE" secondAttribute="top" id="G4V-1j-wR6"/>
+                <constraint firstItem="8x0-AH-P86" firstAttribute="bottom" secondItem="e9S-HH-yJL" secondAttribute="bottom" id="fgO-Wn-Wy2"/>
+                <constraint firstItem="8x0-AH-P86" firstAttribute="leading" secondItem="e9S-HH-yJL" secondAttribute="leading" id="gfX-Ee-fgk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="8x0-AH-P86" id="EL0-6D-wkx"/>
+            </connections>
+            <point key="canvasLocation" x="718.84057971014499" y="278.57142857142856"/>
+        </view>
+    </objects>
+</document>

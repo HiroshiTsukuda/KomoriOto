@@ -15,6 +15,21 @@
 		6EFA178325C9206900563B2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA178125C9206900563B2E /* LaunchScreen.storyboard */; };
 		6EFA178E25C9206900563B2E /* KomoriOtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA178D25C9206900563B2E /* KomoriOtoTests.swift */; };
 		6EFA179925C9206900563B2E /* KomoriOtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA179825C9206900563B2E /* KomoriOtoUITests.swift */; };
+		6EFA17AB25C923C200563B2E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA17A925C923C200563B2E /* TableViewCell.swift */; };
+		6EFA17AC25C923C200563B2E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17AA25C923C200563B2E /* TableViewCell.xib */; };
+		6EFA17B125C929C400563B2E /* TitleTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA17B025C929C400563B2E /* TitleTableViewHeaderView.swift */; };
+		6EFA17B625C929FA00563B2E /* TitleTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17B525C929FA00563B2E /* TitleTableViewHeaderView.xib */; };
+		6EFA17C525C92B8700563B2E /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17BA25C92B8600563B2E /* cat.mp3 */; };
+		6EFA17C625C92B8700563B2E /* bird-and-bag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17BB25C92B8600563B2E /* bird-and-bag.mp3 */; };
+		6EFA17C725C92B8700563B2E /* toillet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17BC25C92B8600563B2E /* toillet.mp3 */; };
+		6EFA17C825C92B8700563B2E /* seseragi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17BD25C92B8600563B2E /* seseragi.mp3 */; };
+		6EFA17C925C92B8700563B2E /* bukubuku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17BE25C92B8700563B2E /* bukubuku.mp3 */; };
+		6EFA17CA25C92B8700563B2E /* ocean-wave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17BF25C92B8700563B2E /* ocean-wave.mp3 */; };
+		6EFA17CB25C92B8700563B2E /* sentakuki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17C025C92B8700563B2E /* sentakuki.mp3 */; };
+		6EFA17CC25C92B8700563B2E /* souziki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17C125C92B8700563B2E /* souziki.mp3 */; };
+		6EFA17CD25C92B8700563B2E /* umbrella.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17C225C92B8700563B2E /* umbrella.mp3 */; };
+		6EFA17CE25C92B8700563B2E /* dryer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17C325C92B8700563B2E /* dryer.mp3 */; };
+		6EFA17CF25C92B8700563B2E /* tv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA17C425C92B8700563B2E /* tv.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +64,21 @@
 		6EFA179425C9206900563B2E /* KomoriOtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KomoriOtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFA179825C9206900563B2E /* KomoriOtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomoriOtoUITests.swift; sourceTree = "<group>"; };
 		6EFA179A25C9206900563B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EFA17A925C923C200563B2E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		6EFA17AA25C923C200563B2E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		6EFA17B025C929C400563B2E /* TitleTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewHeaderView.swift; sourceTree = "<group>"; };
+		6EFA17B525C929FA00563B2E /* TitleTableViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewHeaderView.xib; sourceTree = "<group>"; };
+		6EFA17BA25C92B8600563B2E /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat.mp3; sourceTree = "<group>"; };
+		6EFA17BB25C92B8600563B2E /* bird-and-bag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bird-and-bag.mp3"; sourceTree = "<group>"; };
+		6EFA17BC25C92B8600563B2E /* toillet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toillet.mp3; sourceTree = "<group>"; };
+		6EFA17BD25C92B8600563B2E /* seseragi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = seseragi.mp3; sourceTree = "<group>"; };
+		6EFA17BE25C92B8700563B2E /* bukubuku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bukubuku.mp3; sourceTree = "<group>"; };
+		6EFA17BF25C92B8700563B2E /* ocean-wave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ocean-wave.mp3"; sourceTree = "<group>"; };
+		6EFA17C025C92B8700563B2E /* sentakuki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentakuki.mp3; sourceTree = "<group>"; };
+		6EFA17C125C92B8700563B2E /* souziki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = souziki.mp3; sourceTree = "<group>"; };
+		6EFA17C225C92B8700563B2E /* umbrella.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = umbrella.mp3; sourceTree = "<group>"; };
+		6EFA17C325C92B8700563B2E /* dryer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dryer.mp3; sourceTree = "<group>"; };
+		6EFA17C425C92B8700563B2E /* tv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tv.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +132,25 @@
 				6EFA177625C9206800563B2E /* AppDelegate.swift */,
 				6EFA177825C9206800563B2E /* SceneDelegate.swift */,
 				6EFA177A25C9206800563B2E /* ViewController.swift */,
+				6EFA17B025C929C400563B2E /* TitleTableViewHeaderView.swift */,
+				6EFA17B525C929FA00563B2E /* TitleTableViewHeaderView.xib */,
+				6EFA17A925C923C200563B2E /* TableViewCell.swift */,
+				6EFA17AA25C923C200563B2E /* TableViewCell.xib */,
 				6EFA177C25C9206800563B2E /* Main.storyboard */,
 				6EFA177F25C9206900563B2E /* Assets.xcassets */,
 				6EFA178125C9206900563B2E /* LaunchScreen.storyboard */,
 				6EFA178425C9206900563B2E /* Info.plist */,
+				6EFA17BB25C92B8600563B2E /* bird-and-bag.mp3 */,
+				6EFA17BE25C92B8700563B2E /* bukubuku.mp3 */,
+				6EFA17BA25C92B8600563B2E /* cat.mp3 */,
+				6EFA17C325C92B8700563B2E /* dryer.mp3 */,
+				6EFA17BF25C92B8700563B2E /* ocean-wave.mp3 */,
+				6EFA17C025C92B8700563B2E /* sentakuki.mp3 */,
+				6EFA17BD25C92B8600563B2E /* seseragi.mp3 */,
+				6EFA17C125C92B8700563B2E /* souziki.mp3 */,
+				6EFA17BC25C92B8600563B2E /* toillet.mp3 */,
+				6EFA17C425C92B8700563B2E /* tv.mp3 */,
+				6EFA17C225C92B8700563B2E /* umbrella.mp3 */,
 			);
 			path = KomoriOto;
 			sourceTree = "<group>";
@@ -231,8 +276,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EFA17C825C92B8700563B2E /* seseragi.mp3 in Resources */,
 				6EFA178325C9206900563B2E /* LaunchScreen.storyboard in Resources */,
+				6EFA17AC25C923C200563B2E /* TableViewCell.xib in Resources */,
+				6EFA17B625C929FA00563B2E /* TitleTableViewHeaderView.xib in Resources */,
+				6EFA17CE25C92B8700563B2E /* dryer.mp3 in Resources */,
+				6EFA17CD25C92B8700563B2E /* umbrella.mp3 in Resources */,
+				6EFA17CC25C92B8700563B2E /* souziki.mp3 in Resources */,
+				6EFA17C525C92B8700563B2E /* cat.mp3 in Resources */,
+				6EFA17C625C92B8700563B2E /* bird-and-bag.mp3 in Resources */,
 				6EFA178025C9206900563B2E /* Assets.xcassets in Resources */,
+				6EFA17C725C92B8700563B2E /* toillet.mp3 in Resources */,
+				6EFA17C925C92B8700563B2E /* bukubuku.mp3 in Resources */,
+				6EFA17CA25C92B8700563B2E /* ocean-wave.mp3 in Resources */,
+				6EFA17CB25C92B8700563B2E /* sentakuki.mp3 in Resources */,
+				6EFA17CF25C92B8700563B2E /* tv.mp3 in Resources */,
 				6EFA177E25C9206800563B2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EFA177B25C9206800563B2E /* ViewController.swift in Sources */,
+				6EFA17AB25C923C200563B2E /* TableViewCell.swift in Sources */,
+				6EFA17B125C929C400563B2E /* TitleTableViewHeaderView.swift in Sources */,
 				6EFA177725C9206800563B2E /* AppDelegate.swift in Sources */,
 				6EFA177925C9206800563B2E /* SceneDelegate.swift in Sources */,
 			);
