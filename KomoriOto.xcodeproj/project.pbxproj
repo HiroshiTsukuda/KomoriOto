@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EFA177725C9206800563B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA177625C9206800563B2E /* AppDelegate.swift */; };
+		6EFA177925C9206800563B2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA177825C9206800563B2E /* SceneDelegate.swift */; };
+		6EFA177B25C9206800563B2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA177A25C9206800563B2E /* ViewController.swift */; };
+		6EFA177E25C9206800563B2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA177C25C9206800563B2E /* Main.storyboard */; };
+		6EFA178025C9206900563B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA177F25C9206900563B2E /* Assets.xcassets */; };
+		6EFA178325C9206900563B2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFA178125C9206900563B2E /* LaunchScreen.storyboard */; };
+		6EFA178E25C9206900563B2E /* KomoriOtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA178D25C9206900563B2E /* KomoriOtoTests.swift */; };
+		6EFA179925C9206900563B2E /* KomoriOtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA179825C9206900563B2E /* KomoriOtoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EFA178A25C9206900563B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EFA176B25C9206800563B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EFA177225C9206800563B2E;
+			remoteInfo = KomoriOto;
+		};
+		6EFA179525C9206900563B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EFA176B25C9206800563B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EFA177225C9206800563B2E;
+			remoteInfo = KomoriOto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6EFA177325C9206800563B2E /* KomoriOto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KomoriOto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFA177625C9206800563B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EFA177825C9206800563B2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6EFA177A25C9206800563B2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EFA177D25C9206800563B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EFA177F25C9206900563B2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EFA178225C9206900563B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EFA178425C9206900563B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EFA178925C9206900563B2E /* KomoriOtoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KomoriOtoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFA178D25C9206900563B2E /* KomoriOtoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomoriOtoTests.swift; sourceTree = "<group>"; };
+		6EFA178F25C9206900563B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EFA179425C9206900563B2E /* KomoriOtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KomoriOtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFA179825C9206900563B2E /* KomoriOtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomoriOtoUITests.swift; sourceTree = "<group>"; };
+		6EFA179A25C9206900563B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EFA177025C9206800563B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFA178625C9206900563B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFA179125C9206900563B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EFA176A25C9206800563B2E = {
+			isa = PBXGroup;
+			children = (
+				6EFA177525C9206800563B2E /* KomoriOto */,
+				6EFA178C25C9206900563B2E /* KomoriOtoTests */,
+				6EFA179725C9206900563B2E /* KomoriOtoUITests */,
+				6EFA177425C9206800563B2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EFA177425C9206800563B2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EFA177325C9206800563B2E /* KomoriOto.app */,
+				6EFA178925C9206900563B2E /* KomoriOtoTests.xctest */,
+				6EFA179425C9206900563B2E /* KomoriOtoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EFA177525C9206800563B2E /* KomoriOto */ = {
+			isa = PBXGroup;
+			children = (
+				6EFA177625C9206800563B2E /* AppDelegate.swift */,
+				6EFA177825C9206800563B2E /* SceneDelegate.swift */,
+				6EFA177A25C9206800563B2E /* ViewController.swift */,
+				6EFA177C25C9206800563B2E /* Main.storyboard */,
+				6EFA177F25C9206900563B2E /* Assets.xcassets */,
+				6EFA178125C9206900563B2E /* LaunchScreen.storyboard */,
+				6EFA178425C9206900563B2E /* Info.plist */,
+			);
+			path = KomoriOto;
+			sourceTree = "<group>";
+		};
+		6EFA178C25C9206900563B2E /* KomoriOtoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EFA178D25C9206900563B2E /* KomoriOtoTests.swift */,
+				6EFA178F25C9206900563B2E /* Info.plist */,
+			);
+			path = KomoriOtoTests;
+			sourceTree = "<group>";
+		};
+		6EFA179725C9206900563B2E /* KomoriOtoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EFA179825C9206900563B2E /* KomoriOtoUITests.swift */,
+				6EFA179A25C9206900563B2E /* Info.plist */,
+			);
+			path = KomoriOtoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EFA177225C9206800563B2E /* KomoriOto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EFA179D25C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOto" */;
+			buildPhases = (
+				6EFA176F25C9206800563B2E /* Sources */,
+				6EFA177025C9206800563B2E /* Frameworks */,
+				6EFA177125C9206800563B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KomoriOto;
+			productName = KomoriOto;
+			productReference = 6EFA177325C9206800563B2E /* KomoriOto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EFA178825C9206900563B2E /* KomoriOtoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EFA17A025C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOtoTests" */;
+			buildPhases = (
+				6EFA178525C9206900563B2E /* Sources */,
+				6EFA178625C9206900563B2E /* Frameworks */,
+				6EFA178725C9206900563B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EFA178B25C9206900563B2E /* PBXTargetDependency */,
+			);
+			name = KomoriOtoTests;
+			productName = KomoriOtoTests;
+			productReference = 6EFA178925C9206900563B2E /* KomoriOtoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EFA179325C9206900563B2E /* KomoriOtoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EFA17A325C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOtoUITests" */;
+			buildPhases = (
+				6EFA179025C9206900563B2E /* Sources */,
+				6EFA179125C9206900563B2E /* Frameworks */,
+				6EFA179225C9206900563B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EFA179625C9206900563B2E /* PBXTargetDependency */,
+			);
+			name = KomoriOtoUITests;
+			productName = KomoriOtoUITests;
+			productReference = 6EFA179425C9206900563B2E /* KomoriOtoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EFA176B25C9206800563B2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					6EFA177225C9206800563B2E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					6EFA178825C9206900563B2E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6EFA177225C9206800563B2E;
+					};
+					6EFA179325C9206900563B2E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6EFA177225C9206800563B2E;
+					};
+				};
+			};
+			buildConfigurationList = 6EFA176E25C9206800563B2E /* Build configuration list for PBXProject "KomoriOto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EFA176A25C9206800563B2E;
+			productRefGroup = 6EFA177425C9206800563B2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EFA177225C9206800563B2E /* KomoriOto */,
+				6EFA178825C9206900563B2E /* KomoriOtoTests */,
+				6EFA179325C9206900563B2E /* KomoriOtoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EFA177125C9206800563B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EFA178325C9206900563B2E /* LaunchScreen.storyboard in Resources */,
+				6EFA178025C9206900563B2E /* Assets.xcassets in Resources */,
+				6EFA177E25C9206800563B2E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFA178725C9206900563B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFA179225C9206900563B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EFA176F25C9206800563B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EFA177B25C9206800563B2E /* ViewController.swift in Sources */,
+				6EFA177725C9206800563B2E /* AppDelegate.swift in Sources */,
+				6EFA177925C9206800563B2E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFA178525C9206900563B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EFA178E25C9206900563B2E /* KomoriOtoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFA179025C9206900563B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EFA179925C9206900563B2E /* KomoriOtoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EFA178B25C9206900563B2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EFA177225C9206800563B2E /* KomoriOto */;
+			targetProxy = 6EFA178A25C9206900563B2E /* PBXContainerItemProxy */;
+		};
+		6EFA179625C9206900563B2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EFA177225C9206800563B2E /* KomoriOto */;
+			targetProxy = 6EFA179525C9206900563B2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EFA177C25C9206800563B2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EFA177D25C9206800563B2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EFA178125C9206900563B2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EFA178225C9206900563B2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EFA179B25C9206900563B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EFA179C25C9206900563B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EFA179E25C9206900563B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z627BW2922;
+				INFOPLIST_FILE = KomoriOto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.window.KomoriOto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EFA179F25C9206900563B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z627BW2922;
+				INFOPLIST_FILE = KomoriOto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.window.KomoriOto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EFA17A125C9206900563B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z627BW2922;
+				INFOPLIST_FILE = KomoriOtoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.window.KomoriOtoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KomoriOto.app/KomoriOto";
+			};
+			name = Debug;
+		};
+		6EFA17A225C9206900563B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z627BW2922;
+				INFOPLIST_FILE = KomoriOtoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.window.KomoriOtoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KomoriOto.app/KomoriOto";
+			};
+			name = Release;
+		};
+		6EFA17A425C9206900563B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z627BW2922;
+				INFOPLIST_FILE = KomoriOtoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.window.KomoriOtoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KomoriOto;
+			};
+			name = Debug;
+		};
+		6EFA17A525C9206900563B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z627BW2922;
+				INFOPLIST_FILE = KomoriOtoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.window.KomoriOtoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KomoriOto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EFA176E25C9206800563B2E /* Build configuration list for PBXProject "KomoriOto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFA179B25C9206900563B2E /* Debug */,
+				6EFA179C25C9206900563B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EFA179D25C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFA179E25C9206900563B2E /* Debug */,
+				6EFA179F25C9206900563B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EFA17A025C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOtoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFA17A125C9206900563B2E /* Debug */,
+				6EFA17A225C9206900563B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EFA17A325C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOtoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFA17A425C9206900563B2E /* Debug */,
+				6EFA17A525C9206900563B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EFA176B25C9206800563B2E /* Project object */;
+}
