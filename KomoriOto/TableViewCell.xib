@@ -18,7 +18,7 @@
                 <subviews>
                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30c-c2-zTA">
                         <rect key="frame" x="16" y="8" width="288" height="34"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.99749010800000004" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAM-ZK-hAs">
                         <rect key="frame" x="16" y="8" width="288" height="34"/>
@@ -35,33 +35,48 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Aod-Dz-i4o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.96078431372549022" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htz-zn-riA">
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.99556607009999998" green="0.99737030270000004" blue="0.90194791559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15"/>
                                 </state>
                                 <connections>
                                     <action selector="changeImagePressButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jPb-G3-e4J"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDF-F2-fbQ">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99749010800000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="広告を見る">
+                                    <color key="titleColor" red="0.019607843137254902" green="0.026893960309999999" blue="0.2392314076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressAdButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="etD-x1-9Fb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hEe-Xv-DgB" firstAttribute="centerY" secondItem="GAM-ZK-hAs" secondAttribute="centerY" id="0SL-Fi-aSc"/>
+                            <constraint firstItem="kDF-F2-fbQ" firstAttribute="top" secondItem="GAM-ZK-hAs" secondAttribute="top" id="4b4-D8-Pl1"/>
                             <constraint firstItem="hEe-Xv-DgB" firstAttribute="leading" secondItem="GAM-ZK-hAs" secondAttribute="leading" constant="32" id="E99-jS-gKP"/>
                             <constraint firstAttribute="bottom" secondItem="htz-zn-riA" secondAttribute="bottom" id="L09-Ua-456"/>
                             <constraint firstItem="htz-zn-riA" firstAttribute="top" secondItem="GAM-ZK-hAs" secondAttribute="top" id="Naj-es-SI1"/>
+                            <constraint firstItem="kDF-F2-fbQ" firstAttribute="leading" secondItem="GAM-ZK-hAs" secondAttribute="leading" id="NmX-dM-H0U"/>
                             <constraint firstItem="oq6-rD-G7h" firstAttribute="leading" secondItem="hEe-Xv-DgB" secondAttribute="trailing" constant="32" id="PF6-ax-rs2"/>
                             <constraint firstAttribute="trailing" secondItem="htz-zn-riA" secondAttribute="trailing" id="UBP-4W-LpX"/>
                             <constraint firstItem="htz-zn-riA" firstAttribute="leading" secondItem="GAM-ZK-hAs" secondAttribute="leading" id="Vts-KC-J6W"/>
                             <constraint firstAttribute="trailing" secondItem="oq6-rD-G7h" secondAttribute="trailing" constant="16" id="aiL-JL-T1l"/>
                             <constraint firstItem="oq6-rD-G7h" firstAttribute="centerY" secondItem="GAM-ZK-hAs" secondAttribute="centerY" id="ilh-My-CLp"/>
+                            <constraint firstAttribute="bottom" secondItem="kDF-F2-fbQ" secondAttribute="bottom" id="nts-1l-LWb"/>
+                            <constraint firstAttribute="trailing" secondItem="kDF-F2-fbQ" secondAttribute="trailing" id="zXW-uJ-mpI"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -80,6 +95,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="adButton" destination="kDF-F2-fbQ" id="OYX-5j-wtI"/>
                 <outlet property="containerView" destination="30c-c2-zTA" id="aY9-Kp-Der"/>
                 <outlet property="itemImageView" destination="hEe-Xv-DgB" id="473-Rc-AVw"/>
                 <outlet property="pauseButton" destination="htz-zn-riA" id="Rrt-ym-cBp"/>

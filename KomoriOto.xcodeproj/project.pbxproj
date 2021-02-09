@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000D1AC0F945D398A95DF836 /* Pods_KomoriOto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AE06BB32663F7B6A955A8C /* Pods_KomoriOto.framework */; };
+		1B2C13C632F54B1B3466247E /* Pods_KomoriOto_KomoriOtoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497669893A95F731065C77FF /* Pods_KomoriOto_KomoriOtoUITests.framework */; };
+		5122A017FFC6E63C17D4EB30 /* Pods_KomoriOtoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8D6A077CB084CC398703D9 /* Pods_KomoriOtoTests.framework */; };
+		6EC5DADD25C9A6670058FE44 /* heart_beat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EC5DADC25C9A6670058FE44 /* heart_beat.mp3 */; };
+		6EC5DAE225CBD1720058FE44 /* binil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EC5DAE125CBD1720058FE44 /* binil.mp3 */; };
+		6EC5DAE725CBDEF80058FE44 /* car.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EC5DAE625CBDEF80058FE44 /* car.mp3 */; };
 		6EFA177725C9206800563B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA177625C9206800563B2E /* AppDelegate.swift */; };
 		6EFA177925C9206800563B2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA177825C9206800563B2E /* SceneDelegate.swift */; };
 		6EFA177B25C9206800563B2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA177A25C9206800563B2E /* ViewController.swift */; };
@@ -50,6 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22F4D2ABAF3C6176C66AAB81 /* Pods-KomoriOtoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KomoriOtoTests.debug.xcconfig"; path = "Target Support Files/Pods-KomoriOtoTests/Pods-KomoriOtoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		239202621FA50248EB74E7F8 /* Pods-KomoriOto-KomoriOtoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KomoriOto-KomoriOtoUITests.release.xcconfig"; path = "Target Support Files/Pods-KomoriOto-KomoriOtoUITests/Pods-KomoriOto-KomoriOtoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		26AE06BB32663F7B6A955A8C /* Pods_KomoriOto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KomoriOto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E70054F3AA575210A8BD2E0 /* Pods-KomoriOto-KomoriOtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KomoriOto-KomoriOtoUITests.debug.xcconfig"; path = "Target Support Files/Pods-KomoriOto-KomoriOtoUITests/Pods-KomoriOto-KomoriOtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		497669893A95F731065C77FF /* Pods_KomoriOto_KomoriOtoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KomoriOto_KomoriOtoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC5DADC25C9A6670058FE44 /* heart_beat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heart_beat.mp3; sourceTree = "<group>"; };
+		6EC5DAE125CBD1720058FE44 /* binil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = binil.mp3; sourceTree = "<group>"; };
+		6EC5DAE625CBDEF80058FE44 /* car.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = car.mp3; sourceTree = "<group>"; };
 		6EFA177325C9206800563B2E /* KomoriOto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KomoriOto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFA177625C9206800563B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EFA177825C9206800563B2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +93,10 @@
 		6EFA17C225C92B8700563B2E /* umbrella.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = umbrella.mp3; sourceTree = "<group>"; };
 		6EFA17C325C92B8700563B2E /* dryer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dryer.mp3; sourceTree = "<group>"; };
 		6EFA17C425C92B8700563B2E /* tv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tv.mp3; sourceTree = "<group>"; };
+		AEE537310602C89182193C99 /* Pods-KomoriOto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KomoriOto.release.xcconfig"; path = "Target Support Files/Pods-KomoriOto/Pods-KomoriOto.release.xcconfig"; sourceTree = "<group>"; };
+		F3EAF251114046991441F444 /* Pods-KomoriOtoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KomoriOtoTests.release.xcconfig"; path = "Target Support Files/Pods-KomoriOtoTests/Pods-KomoriOtoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F458217593208003B8329DBD /* Pods-KomoriOto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KomoriOto.debug.xcconfig"; path = "Target Support Files/Pods-KomoriOto/Pods-KomoriOto.debug.xcconfig"; sourceTree = "<group>"; };
+		FD8D6A077CB084CC398703D9 /* Pods_KomoriOtoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KomoriOtoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000D1AC0F945D398A95DF836 /* Pods_KomoriOto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5122A017FFC6E63C17D4EB30 /* Pods_KomoriOtoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +120,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2C13C632F54B1B3466247E /* Pods_KomoriOto_KomoriOtoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FF6144A908B8E699CE01A2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F458217593208003B8329DBD /* Pods-KomoriOto.debug.xcconfig */,
+				AEE537310602C89182193C99 /* Pods-KomoriOto.release.xcconfig */,
+				2E70054F3AA575210A8BD2E0 /* Pods-KomoriOto-KomoriOtoUITests.debug.xcconfig */,
+				239202621FA50248EB74E7F8 /* Pods-KomoriOto-KomoriOtoUITests.release.xcconfig */,
+				22F4D2ABAF3C6176C66AAB81 /* Pods-KomoriOtoTests.debug.xcconfig */,
+				F3EAF251114046991441F444 /* Pods-KomoriOtoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6EFA176A25C9206800563B2E = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +147,8 @@
 				6EFA178C25C9206900563B2E /* KomoriOtoTests */,
 				6EFA179725C9206900563B2E /* KomoriOtoUITests */,
 				6EFA177425C9206800563B2E /* Products */,
+				0FF6144A908B8E699CE01A2B /* Pods */,
+				C4F662227ED7116A28C7A95A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,10 +178,13 @@
 				6EFA178425C9206900563B2E /* Info.plist */,
 				6EFA17BB25C92B8600563B2E /* bird-and-bag.mp3 */,
 				6EFA17BE25C92B8700563B2E /* bukubuku.mp3 */,
+				6EC5DAE125CBD1720058FE44 /* binil.mp3 */,
 				6EFA17BA25C92B8600563B2E /* cat.mp3 */,
 				6EFA17C325C92B8700563B2E /* dryer.mp3 */,
 				6EFA17BF25C92B8700563B2E /* ocean-wave.mp3 */,
+				6EC5DAE625CBDEF80058FE44 /* car.mp3 */,
 				6EFA17C025C92B8700563B2E /* sentakuki.mp3 */,
+				6EC5DADC25C9A6670058FE44 /* heart_beat.mp3 */,
 				6EFA17BD25C92B8600563B2E /* seseragi.mp3 */,
 				6EFA17C125C92B8700563B2E /* souziki.mp3 */,
 				6EFA17BC25C92B8600563B2E /* toillet.mp3 */,
@@ -173,6 +212,16 @@
 			path = KomoriOtoUITests;
 			sourceTree = "<group>";
 		};
+		C4F662227ED7116A28C7A95A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26AE06BB32663F7B6A955A8C /* Pods_KomoriOto.framework */,
+				497669893A95F731065C77FF /* Pods_KomoriOto_KomoriOtoUITests.framework */,
+				FD8D6A077CB084CC398703D9 /* Pods_KomoriOtoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EFA179D25C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOto" */;
 			buildPhases = (
+				68CAFB1961C6BC1FADE6E3CD /* [CP] Check Pods Manifest.lock */,
 				6EFA176F25C9206800563B2E /* Sources */,
 				6EFA177025C9206800563B2E /* Frameworks */,
 				6EFA177125C9206800563B2E /* Resources */,
+				C66B3C52831448A6A5614D15 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EFA17A025C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOtoTests" */;
 			buildPhases = (
+				153736805FEAC344B7B2DA5B /* [CP] Check Pods Manifest.lock */,
 				6EFA178525C9206900563B2E /* Sources */,
 				6EFA178625C9206900563B2E /* Frameworks */,
 				6EFA178725C9206900563B2E /* Resources */,
@@ -215,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EFA17A325C9206900563B2E /* Build configuration list for PBXNativeTarget "KomoriOtoUITests" */;
 			buildPhases = (
+				805C26CDA02118D3E5DFC60C /* [CP] Check Pods Manifest.lock */,
 				6EFA179025C9206900563B2E /* Sources */,
 				6EFA179125C9206900563B2E /* Frameworks */,
 				6EFA179225C9206900563B2E /* Resources */,
+				7466D102E9FCEA08EA81CD1E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC5DAE725CBDEF80058FE44 /* car.mp3 in Resources */,
 				6EFA17C825C92B8700563B2E /* seseragi.mp3 in Resources */,
 				6EFA178325C9206900563B2E /* LaunchScreen.storyboard in Resources */,
 				6EFA17AC25C923C200563B2E /* TableViewCell.xib in Resources */,
@@ -284,7 +339,9 @@
 				6EFA17CD25C92B8700563B2E /* umbrella.mp3 in Resources */,
 				6EFA17CC25C92B8700563B2E /* souziki.mp3 in Resources */,
 				6EFA17C525C92B8700563B2E /* cat.mp3 in Resources */,
+				6EC5DADD25C9A6670058FE44 /* heart_beat.mp3 in Resources */,
 				6EFA17C625C92B8700563B2E /* bird-and-bag.mp3 in Resources */,
+				6EC5DAE225CBD1720058FE44 /* binil.mp3 in Resources */,
 				6EFA178025C9206900563B2E /* Assets.xcassets in Resources */,
 				6EFA17C725C92B8700563B2E /* toillet.mp3 in Resources */,
 				6EFA17C925C92B8700563B2E /* bukubuku.mp3 in Resources */,
@@ -310,6 +367,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		153736805FEAC344B7B2DA5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KomoriOtoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68CAFB1961C6BC1FADE6E3CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KomoriOto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7466D102E9FCEA08EA81CD1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KomoriOto-KomoriOtoUITests/Pods-KomoriOto-KomoriOtoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KomoriOto-KomoriOtoUITests/Pods-KomoriOto-KomoriOtoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KomoriOto-KomoriOtoUITests/Pods-KomoriOto-KomoriOtoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		805C26CDA02118D3E5DFC60C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KomoriOto-KomoriOtoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66B3C52831448A6A5614D15 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KomoriOto/Pods-KomoriOto-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KomoriOto/Pods-KomoriOto-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KomoriOto/Pods-KomoriOto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EFA176F25C9206800563B2E /* Sources */ = {
@@ -493,6 +653,7 @@
 		};
 		6EFA179E25C9206900563B2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F458217593208003B8329DBD /* Pods-KomoriOto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -512,6 +673,7 @@
 		};
 		6EFA179F25C9206900563B2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEE537310602C89182193C99 /* Pods-KomoriOto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,6 +693,7 @@
 		};
 		6EFA17A125C9206900563B2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F4D2ABAF3C6176C66AAB81 /* Pods-KomoriOtoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -553,6 +716,7 @@
 		};
 		6EFA17A225C9206900563B2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3EAF251114046991441F444 /* Pods-KomoriOtoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,6 +739,7 @@
 		};
 		6EFA17A425C9206900563B2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E70054F3AA575210A8BD2E0 /* Pods-KomoriOto-KomoriOtoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,6 +760,7 @@
 		};
 		6EFA17A525C9206900563B2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239202621FA50248EB74E7F8 /* Pods-KomoriOto-KomoriOtoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

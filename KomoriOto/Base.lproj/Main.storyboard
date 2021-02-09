@@ -16,12 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky-828648_1920" translatesAutoresizingMaskIntoConstraints="NO" id="diq-Hl-rDz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="komorioto_背景" translatesAutoresizingMaskIntoConstraints="NO" id="diq-Hl-rDz">
+                                <rect key="frame" x="0.0" y="-1" width="414" height="897"/>
                             </imageView>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKB-L6-MdG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfp-Wq-byD" customClass="NADView">
+                                <rect key="frame" x="47" y="820" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="BMc-zJ-Hku"/>
+                                    <constraint firstAttribute="height" constant="50" id="r1d-5O-abS"/>
+                                </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-5c-BKu">
                                 <rect key="frame" x="0.0" y="44" width="414" height="768"/>
@@ -48,18 +56,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EKB-L6-MdG" secondAttribute="bottom" constant="-34" id="2FX-Vo-0oH"/>
                             <constraint firstItem="5y9-5c-BKu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2QM-Ed-qw0"/>
                             <constraint firstItem="EKB-L6-MdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ju-gS-pte"/>
+                            <constraint firstItem="zfp-Wq-byD" firstAttribute="top" secondItem="5y9-5c-BKu" secondAttribute="bottom" constant="8" id="Co1-L7-Ibw"/>
                             <constraint firstItem="diq-Hl-rDz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kzz-R3-FRJ"/>
+                            <constraint firstItem="diq-Hl-rDz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-1" id="Lpt-g0-pFC"/>
                             <constraint firstItem="EKB-L6-MdG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W7M-e8-Cgz"/>
                             <constraint firstItem="EKB-L6-MdG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YgB-WV-KBr"/>
                             <constraint firstAttribute="bottom" secondItem="diq-Hl-rDz" secondAttribute="bottom" id="ZpK-U2-DAP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5y9-5c-BKu" secondAttribute="bottom" constant="50" id="bga-P7-LuN"/>
                             <constraint firstItem="diq-Hl-rDz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dA9-kz-aef"/>
                             <constraint firstItem="5y9-5c-BKu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gNm-Ab-BtR"/>
-                            <constraint firstItem="diq-Hl-rDz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hsw-LQ-GWa"/>
                             <constraint firstItem="5y9-5c-BKu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tir-hT-JMw"/>
+                            <constraint firstItem="zfp-Wq-byD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vMG-hE-yfL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nadView" destination="zfp-Wq-byD" id="C2l-64-bey"/>
                         <outlet property="tableView" destination="5y9-5c-BKu" id="L0G-Na-ba3"/>
                     </connections>
                 </viewController>
@@ -69,7 +80,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sky-828648_1920" width="1920" height="1280"/>
+        <image name="komorioto_背景" width="1172" height="2534"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
