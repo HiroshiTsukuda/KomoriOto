@@ -58,7 +58,7 @@
                                     <color key="titleColor" red="0.019607843137254902" green="0.026893960309999999" blue="0.2392314076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressAdButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="etD-x1-9Fb"/>
+                                    <action selector="pressAdButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jhD-TA-JG5"/>
                                 </connections>
                             </button>
                         </subviews>

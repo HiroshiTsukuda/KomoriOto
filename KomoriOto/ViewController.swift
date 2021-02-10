@@ -10,8 +10,15 @@ import AVFoundation
 import NendAd
 
 
-class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NADInterstitialVideoDelegate {
-    
+class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NADInterstitialVideoDelegate,CellDelegate{
+    func adButtonTapped(_ tag: Int) {
+        
+        print("pressed a button with a tag: \(tag)")
+        
+//        adFlg = false
+        tableView.reloadData()
+    }
+
     let interstitialVideo = NADInterstitialVideo(spotID: 1024744, apiKey: "94b3093282245ea22e0ce3fbc36f6dccaf0b7f26")
     @IBOutlet weak var nadView: NADView!
     @IBOutlet weak var tableView: UITableView!
@@ -31,7 +38,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NA
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         tableView.dataSource = self
         tableView.delegate = self
         player?.delegate = self
@@ -91,7 +98,6 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NA
             break
         }
     }
-    
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
@@ -106,22 +112,30 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     
         cell.indexPath = indexPath
         
+        cell.adButton.tag = indexPath.row
+        cell.cellDelegate = self
+        
         //選択時の背景（灰色への変換）の無効化
         cell.selectionStyle = .none
         
         if adFlg == true{
             if indexPath.row > 6 {
                 cell.adButton.isHidden = false
-                cell.adButton.addTarget(self, action: #selector(tapCellButton), for: .touchUpInside)
+//                cell.adButton.addTarget(self, action: #selector(tapCellButton(sender:)), for: .touchUpInside)
             }
             else {
                 cell.adButton.isHidden = true
-//                cell.adButton.addTarget(self, action: #selector(tapCellButton), for: .touchUpInside)
+            }
+        } else {
+            if indexPath.row > 6 {
+                cell.adButton.isHidden = true
+                
             }
         }
         
         return cell
     }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
@@ -138,16 +152,16 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         return 80
     }
     
-    @objc private func tapCellButton(){
-        print("Button is tapped")
-            adFlg = false
-            tableView.reloadData()
-        //動画広告を表示
-        if interstitialVideo.isReady{
-            interstitialVideo.showAd(from: self)
-        }
-
-    }
+//    @objc private func tapCellButton( sender: UIButton){
+//        print("Button is tapped")
+//        adFlg = false
+//
+//        //動画広告を表示
+//        if interstitialVideo.isReady{
+//            interstitialVideo.showAd(from: self)
+//        }
+//        tableView.reloadData()
+//    }
     
 }
 

@@ -8,9 +8,13 @@
 import UIKit
 import AVFoundation
 
+protocol CellDelegate: class {
+    func adButtonTapped(_ tag: Int)
+}
+
 class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
 
-    
+    weak var cellDelegate: CellDelegate?
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var soundNameLabel: UILabel!
@@ -19,7 +23,7 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
     
     var player :AVAudioPlayer!
     var flg = false
-    var adFlg = true
+    var adFlg = false
     var pause: UIImage = UIImage(named: "pauseButton")!
     var indexPath = IndexPath()
     let audioSession = AVAudioSession.sharedInstance()
@@ -36,9 +40,16 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
         pauseButton?.layer.borderColor = UIColor(red: 255/255, green: 245/255, blue: 210/255, alpha: 1).cgColor
         adButton?.layer.cornerRadius = 30
         adButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 30);
-//        adButton.isHidden = true
-//        adLimitCntl()
-
+        
+//        if adFlg == false{
+//            if indexPath.row > 6 {
+//                adButton.isHidden = true
+//
+//            }
+//            else {
+//                adButton.isHidden = false
+//            }
+//        }
 
     }
     
@@ -98,22 +109,6 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
 
     }
     
-    
-//    private func endAdController(forKey: IndexPath) {
-//        let indexPathOfAd = ["7","8","9","10","11"]
-//        print(indexPath.row)
-//
-//        UserDefaults.standard.set(adFlg, forKey: indexPathOfAd[indexPath.row])
-//        if adFlg {
-//
-//            adFlg = false
-//            adButton.isHidden = false
-//        } else {
-//            adFlg = true
-//            adButton.isHidden = true
-//        }
-//    }
-    
     @IBAction func changeImagePressButton(_ sender: Any) {
         
         switch indexPath.row {
@@ -160,29 +155,52 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
         }
         
     }
+        private func endAdController() {
+
+            let indexPathOfAd = ["7","8","9","10","11"]
+            print(indexPath.row)
+
+//            UserDefaults.standard.set(adFlg, forKey: indexPathOfAd[indexPath.row])
+            
+            if adFlg {
     
-    @IBAction func pressAdButton(_ sender: Any) {
-        print(indexPath.row)
-//        switch indexPath.row {
-//
-//        case 7:
-//            endAdController(forKey: [0])
-//
-//        case 8:
-//            endAdController(forKey: [1])
-//
-//        case 9:
-//            endAdController(forKey: [2])
-//
-//        case 10:
-//            endAdController(forKey: [3])
-//
-//        case 11:
-//            endAdController(forKey: [4])
-//
-//        default:
-//            return
-//        }
+                adFlg = false
+                adButton.isHidden = false
+            } else {
+                adFlg = true
+                adButton.isHidden = true
+            }
+            
+        }
+    
+    @IBAction func pressAdButton(_ sender: UIButton) {
+        
+//        print(indexPath.row,"Button Tap")
+
+//        endAdController()
+        switch sender.tag {
+
+        case 7:
+            endAdController()
+
+
+        case 8:
+            endAdController()
+
+        case 9:
+            endAdController()
+
+        case 10:
+            endAdController()
+
+        case 11:
+            endAdController()
+
+        default:
+            return
+        }
+        cellDelegate?.adButtonTapped(sender.tag)
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
