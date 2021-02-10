@@ -155,20 +155,21 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
         }
         
     }
-        private func endAdController() {
+        private func endAdController(forKey: IndexPath) {
 
             let indexPathOfAd = ["7","8","9","10","11"]
             print(indexPath.row)
 
 //            UserDefaults.standard.set(adFlg, forKey: indexPathOfAd[indexPath.row])
+            adFlg = false
             
             if adFlg {
     
                 adFlg = false
-                adButton.isHidden = false
+                adButton.isHidden = true
             } else {
                 adFlg = true
-                adButton.isHidden = true
+                adButton.isHidden = false
             }
             
         }
@@ -181,20 +182,20 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
         switch sender.tag {
 
         case 7:
-            endAdController()
-
+            endAdController(forKey: [0])
+            print(77)
 
         case 8:
-            endAdController()
+            endAdController(forKey: [1])
 
         case 9:
-            endAdController()
+            endAdController(forKey: [2])
 
         case 10:
-            endAdController()
+            endAdController(forKey: [3])
 
         case 11:
-            endAdController()
+            endAdController(forKey: [4])
 
         default:
             return

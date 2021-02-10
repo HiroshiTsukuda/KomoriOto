@@ -15,7 +15,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NA
         
         print("pressed a button with a tag: \(tag)")
         
-//        adFlg = false
+        adFlg = true
         tableView.reloadData()
     }
 
@@ -26,7 +26,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NA
     var namesList = ["テレビの砂嵐","車","掃除機","ドライヤー","洗濯機","傘の雨音","トイレ","泡","波","心臓","せせらぎ","野鳥と虫"]
     var player :AVAudioPlayer!
     var flg = false
-    var adFlg = true
+    var adFlg = false
     let userDefault = UserDefaults.standard
     var indexPath = IndexPath()
     
@@ -118,7 +118,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         //選択時の背景（灰色への変換）の無効化
         cell.selectionStyle = .none
         
-        if adFlg == true{
+        if adFlg == false{
             if indexPath.row > 6 {
                 cell.adButton.isHidden = false
 //                cell.adButton.addTarget(self, action: #selector(tapCellButton(sender:)), for: .touchUpInside)
