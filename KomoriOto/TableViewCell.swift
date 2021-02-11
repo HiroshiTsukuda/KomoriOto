@@ -23,7 +23,8 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
     
     var player :AVAudioPlayer!
     var flg = false
-    var adFlg = false
+    var adFlg = true
+
     var pause: UIImage = UIImage(named: "pauseButton")!
     var indexPath = IndexPath()
     let audioSession = AVAudioSession.sharedInstance()
@@ -32,37 +33,17 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
         super.awakeFromNib()
         // Initialization code
         containerView?.layer.cornerRadius = 30
-//        containerView?.layer.borderColor = .init(red: 254, green: 254, blue: 230, alpha:1)
         containerView?.layer.borderWidth = 3
         pauseButton?.layer.cornerRadius = 30
         pauseButton?.layer.borderWidth = 3
+        
        //ボタン背景色設定
         pauseButton?.layer.borderColor = UIColor(red: 255/255, green: 245/255, blue: 210/255, alpha: 1).cgColor
         adButton?.layer.cornerRadius = 30
         adButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 30);
         
-//        if adFlg == false{
-//            if indexPath.row > 6 {
-//                adButton.isHidden = true
-//
-//            }
-//            else {
-//                adButton.isHidden = false
-//            }
-//        }
 
     }
-    
-//    private func adLimitCntl(){
-//        if adFlg == true{
-//            if indexPath < 7 {
-//                adButton.isHidden = true
-//            } else {
-//                adButton.isHidden = false
-////                adButton.addTarget(self, action: #selector(tapCellButton), for: .touchUpInside)
-//            }
-//        }
-//    }
     
     private func musicListNum(forResource: IndexPath){
         //        ["テレビの砂嵐","掃除機","洗濯機","ドライヤー","傘の雨音","トイレ","泡","せせらぎ","波","野鳥と虫","ネコ"]
@@ -161,22 +142,22 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
             print(indexPath.row)
 
 //            UserDefaults.standard.set(adFlg, forKey: indexPathOfAd[indexPath.row])
-            adFlg = false
-            
+            if adButton.isHidden == false{
             if adFlg {
-    
-                adFlg = false
                 adButton.isHidden = true
-            } else {
-                adFlg = true
-                adButton.isHidden = false
+                adFlg = false
             }
-            
+//            else {
+//                adFlg = true
+//                adButton.isHidden = false
+//            }
+            }
+
         }
     
     @IBAction func pressAdButton(_ sender: UIButton) {
         
-//        print(indexPath.row,"Button Tap")
+        print(indexPath.row,"Button Tap")
 
 //        endAdController()
         switch sender.tag {
@@ -187,9 +168,12 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
 
         case 8:
             endAdController(forKey: [1])
+            adButton.isHidden = true
+            print(88)
 
         case 9:
             endAdController(forKey: [2])
+            print(99)
 
         case 10:
             endAdController(forKey: [3])

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="komorioto_背景" translatesAutoresizingMaskIntoConstraints="NO" id="AvO-vZ-3Dd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="komorioto_背景" translatesAutoresizingMaskIntoConstraints="NO" id="AvO-vZ-3Dd">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="アートボード 9" translatesAutoresizingMaskIntoConstraints="NO" id="uQa-TH-mlt">
-                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <rect key="frame" x="70" y="297" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="CnU-am-QmI"/>
                                     <constraint firstAttribute="height" constant="250" id="RX6-fy-NjP"/>
@@ -30,18 +30,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="AvO-vZ-3Dd" secondAttribute="bottom" id="3JT-Mr-htU"/>
-                            <constraint firstItem="AvO-vZ-3Dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CqE-51-0wD"/>
+                            <constraint firstItem="AvO-vZ-3Dd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="19d-cZ-9Js"/>
+                            <constraint firstItem="AvO-vZ-3Dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="68j-db-dQz"/>
+                            <constraint firstAttribute="bottom" secondItem="AvO-vZ-3Dd" secondAttribute="bottom" id="HiX-c3-csz"/>
+                            <constraint firstItem="AvO-vZ-3Dd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="SlV-Pf-WHb"/>
                             <constraint firstItem="uQa-TH-mlt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XxY-dr-v0H"/>
-                            <constraint firstItem="AvO-vZ-3Dd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="gSA-D7-XBn"/>
-                            <constraint firstItem="AvO-vZ-3Dd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pnz-6g-2vb"/>
                             <constraint firstItem="uQa-TH-mlt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zJJ-Ub-x4c"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="50.769230769230766" y="374.64454976303318"/>
         </scene>
     </scenes>
     <resources>

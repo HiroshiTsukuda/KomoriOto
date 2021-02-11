@@ -9,13 +9,16 @@ import UIKit
 import AVFoundation
 import NendAd
 
-
 class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NADInterstitialVideoDelegate,CellDelegate{
+    
     func adButtonTapped(_ tag: Int) {
         
         print("pressed a button with a tag: \(tag)")
+        //動画広告を表示
+//        if interstitialVideo.isReady{
+//            interstitialVideo.showAd(from: self)
+//        }
         
-        adFlg = true
         tableView.reloadData()
     }
 
@@ -25,11 +28,10 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NA
     var images = [#imageLiteral(resourceName: "薄型テレビとBlu-rayの無料アイコン素材 1"),#imageLiteral(resourceName: "横向きの自動車のフリーアイコン 1"),#imageLiteral(resourceName: "掃除機の無料アイコン素材 1"),#imageLiteral(resourceName: "ドライヤーのアイコン素材 6"),#imageLiteral(resourceName: "洗濯機アイコン5 (1)"),#imageLiteral(resourceName: "カサのピクトアイコン4"),#imageLiteral(resourceName: "トイレのフリーアイコン素材 3 (1)"),#imageLiteral(resourceName: "泡のアイコン3 (1)"),#imageLiteral(resourceName: "波アイコン1"),#imageLiteral(resourceName: "心臓のイラスト素材1"),#imageLiteral(resourceName: "川の無料アイコン1 (1)"),#imageLiteral(resourceName: "鳥のシンボルアイコン素材 1")]
     var namesList = ["テレビの砂嵐","車","掃除機","ドライヤー","洗濯機","傘の雨音","トイレ","泡","波","心臓","せせらぎ","野鳥と虫"]
     var player :AVAudioPlayer!
-    var flg = false
+
     var adFlg = false
     let userDefault = UserDefaults.standard
     var indexPath = IndexPath()
-    
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -118,19 +120,9 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         //選択時の背景（灰色への変換）の無効化
         cell.selectionStyle = .none
         
-        if adFlg == false{
-            if indexPath.row > 6 {
-                cell.adButton.isHidden = false
-//                cell.adButton.addTarget(self, action: #selector(tapCellButton(sender:)), for: .touchUpInside)
-            }
-            else {
-                cell.adButton.isHidden = true
-            }
-        } else {
-            if indexPath.row > 6 {
-                cell.adButton.isHidden = true
-                
-            }
+        if indexPath.row < 5 {
+            cell.adButton.isHidden = true
+    
         }
         
         return cell
@@ -152,16 +144,11 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         return 80
     }
     
-//    @objc private func tapCellButton( sender: UIButton){
-//        print("Button is tapped")
-//        adFlg = false
-//
-//        //動画広告を表示
-//        if interstitialVideo.isReady{
-//            interstitialVideo.showAd(from: self)
-//        }
-//        tableView.reloadData()
-//    }
+    @objc private func tapCellButton( sender: UIButton){
+        print("Button is tapped")
+
+        tableView.reloadData()
+    }
     
 }
 
