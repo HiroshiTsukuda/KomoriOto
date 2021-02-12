@@ -18,18 +18,17 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,NADViewDelegate, NA
 //        if interstitialVideo.isReady{
 //            interstitialVideo.showAd(from: self)
 //        }
-        
         tableView.reloadData()
     }
 
     let interstitialVideo = NADInterstitialVideo(spotID: 1024744, apiKey: "94b3093282245ea22e0ce3fbc36f6dccaf0b7f26")
     @IBOutlet weak var nadView: NADView!
     @IBOutlet weak var tableView: UITableView!
-    var images = [#imageLiteral(resourceName: "薄型テレビとBlu-rayの無料アイコン素材 1"),#imageLiteral(resourceName: "横向きの自動車のフリーアイコン 1"),#imageLiteral(resourceName: "掃除機の無料アイコン素材 1"),#imageLiteral(resourceName: "ドライヤーのアイコン素材 6"),#imageLiteral(resourceName: "洗濯機アイコン5 (1)"),#imageLiteral(resourceName: "カサのピクトアイコン4"),#imageLiteral(resourceName: "トイレのフリーアイコン素材 3 (1)"),#imageLiteral(resourceName: "泡のアイコン3 (1)"),#imageLiteral(resourceName: "波アイコン1"),#imageLiteral(resourceName: "心臓のイラスト素材1"),#imageLiteral(resourceName: "川の無料アイコン1 (1)"),#imageLiteral(resourceName: "鳥のシンボルアイコン素材 1")]
-    var namesList = ["テレビの砂嵐","車","掃除機","ドライヤー","洗濯機","傘の雨音","トイレ","泡","波","心臓","せせらぎ","野鳥と虫"]
+    var images = [#imageLiteral(resourceName: "薄型テレビとBlu-rayの無料アイコン素材 1"),#imageLiteral(resourceName: "横向きの自動車のフリーアイコン 1"),#imageLiteral(resourceName: "掃除機の無料アイコン素材 1"),#imageLiteral(resourceName: "ドライヤーのアイコン素材 6"),#imageLiteral(resourceName: "洗濯機アイコン5 (1)"),#imageLiteral(resourceName: "カサのピクトアイコン4"),#imageLiteral(resourceName: "トイレのフリーアイコン素材 3 (1)"),#imageLiteral(resourceName: "泡のアイコン3 (1)"),#imageLiteral(resourceName: "波アイコン1"),#imageLiteral(resourceName: "心臓のイラスト素材1"),#imageLiteral(resourceName: "川の無料アイコン1 (1)"),#imageLiteral(resourceName: "鳥のシンボルアイコン素材 1"),#imageLiteral(resourceName: "登山の無料アイコン2"),#imageLiteral(resourceName: "日本刀のアイコン"),#imageLiteral(resourceName: "強風アイコン1"),#imageLiteral(resourceName: "強火アイコン"),#imageLiteral(resourceName: "キーボードアイコン4"),#imageLiteral(resourceName: "登山の無料アイコン2"),#imageLiteral(resourceName: "歩く人のシルエットアイコン素材 1"),#imageLiteral(resourceName: "雷のアイコン素材 2"),]
+    var namesList = ["テレビの砂嵐","車","掃除機","ドライヤー","洗濯機","傘の雨音","トイレ","泡","波","心臓","せせらぎ","野鳥と虫","夏の山","刀鍛冶","風","鍋","キーボード","マグマ","歩く音","雷雨"]
     var player :AVAudioPlayer!
-
     var adFlg = false
+    
     let userDefault = UserDefaults.standard
     var indexPath = IndexPath()
     
@@ -113,21 +112,21 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         cell.soundNameLabel.text = namesList[indexPath.row]
     
         cell.indexPath = indexPath
-        
         cell.adButton.tag = indexPath.row
         cell.cellDelegate = self
         
         //選択時の背景（灰色への変換）の無効化
         cell.selectionStyle = .none
         
-        if indexPath.row < 5 {
-            cell.adButton.isHidden = true
-    
-        }
+//        if indexPath.row < 10 {
+//            cell.adButton.isHidden = true
+//        } else {
+//            cell.adButton.isHidden = false
+//        }
         
+//        cell.adButton.addTarget(self, action: #selector(tapCellButton), for: .touchUpInside)
         return cell
     }
-    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
@@ -144,11 +143,10 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         return 80
     }
     
-    @objc private func tapCellButton( sender: UIButton){
-        print("Button is tapped")
-
-        tableView.reloadData()
-    }
+//    @objc private func tapCellButton( sender: UIButton){
+//        print("Button is tapped")
+//        tableView.reloadData()
+//    }
     
 }
 

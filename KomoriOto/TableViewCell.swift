@@ -10,6 +10,7 @@ import AVFoundation
 
 protocol CellDelegate: class {
     func adButtonTapped(_ tag: Int)
+
 }
 
 class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
@@ -45,9 +46,11 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
 
     }
     
+
+    
     private func musicListNum(forResource: IndexPath){
-        //        ["テレビの砂嵐","掃除機","洗濯機","ドライヤー","傘の雨音","トイレ","泡","せせらぎ","波","野鳥と虫","ネコ"]
-        var musicList = ["tv","car","souziki","dryer","sentakuki","umbrella","toillet","bukubuku","ocean-wave","heart_beat","seseragi","bird-and-bag"]
+        //            var namesList = ["テレビの砂嵐","車","掃除機","ドライヤー","洗濯機","傘の雨音","トイレ","泡","波","心臓","せせらぎ","野鳥と虫","夏の山","刀鍛冶","風","鍋","キーボード","火山","歩く音","雷雨"]
+        var musicList = ["tv","car","souziki","dryer","sentakuki","umbrella","toillet","bukubuku","ocean-wave","heartBeats3","seseragi","bird-and-bag","summerMountain","katanakaji","wind","Nabe","keyBoard","volcano","walk","rain_thunder1"]
         
         print(indexPath.row)
         
@@ -125,33 +128,52 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
 
         case 10:
             musicListNum(forResource: [10])
-//            adController()
-
         case 11:
             musicListNum(forResource: [11])
-//            adController()
+
+        case 12:
+            musicListNum(forResource: [12])
+        case 13:
+            musicListNum(forResource: [13])
+        case 14:
+            musicListNum(forResource: [14])
+
+        case 15:
+            musicListNum(forResource: [15])
+
+        case 16:
+            musicListNum(forResource: [16])
+
+        case 17:
+            musicListNum(forResource: [17])
+
+        case 18:
+            musicListNum(forResource: [18])
+
+        case 19:
+            musicListNum(forResource: [19])
+
 
         default:
             return
         }
         
     }
-        private func endAdController(forKey: IndexPath) {
+        private func endAdController(/*forKey: IndexPath*/) {
 
-            let indexPathOfAd = ["7","8","9","10","11"]
-            print(indexPath.row)
+//            let indexPathOfAd = ["10","11","12","13","14","15","16","17","18","19"]
+//            print(indexPath.row)
 
-//            UserDefaults.standard.set(adFlg, forKey: indexPathOfAd[indexPath.row])
-            if adButton.isHidden == false{
             if adFlg {
-                adButton.isHidden = true
                 adFlg = false
+                adButton.isHidden = true
+
+            } else {
+                adButton.isHidden = false
             }
-//            else {
-//                adFlg = true
-//                adButton.isHidden = false
-//            }
-            }
+            
+            
+//            UserDefaults.standard.set(adFlg, forKey: indexPathOfAd[indexPath.row])
 
         }
     
@@ -162,24 +184,26 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
 //        endAdController()
         switch sender.tag {
 
-        case 7:
-            endAdController(forKey: [0])
-            print(77)
-
-        case 8:
-            endAdController(forKey: [1])
-            adButton.isHidden = true
-            print(88)
-
-        case 9:
-            endAdController(forKey: [2])
-            print(99)
-
         case 10:
-            endAdController(forKey: [3])
-
+            endAdController()
         case 11:
-            endAdController(forKey: [4])
+            endAdController()
+        case 12:
+            endAdController()
+        case 13:
+            endAdController()
+        case 14:
+            endAdController()
+        case 15:
+            endAdController()
+        case 16:
+            endAdController()
+        case 17:
+            endAdController()
+        case 18:
+            endAdController()
+        case 19:
+            endAdController()
 
         default:
             return

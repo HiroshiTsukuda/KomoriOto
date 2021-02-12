@@ -10,6 +10,16 @@
 		000D1AC0F945D398A95DF836 /* Pods_KomoriOto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AE06BB32663F7B6A955A8C /* Pods_KomoriOto.framework */; };
 		1B2C13C632F54B1B3466247E /* Pods_KomoriOto_KomoriOtoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497669893A95F731065C77FF /* Pods_KomoriOto_KomoriOtoUITests.framework */; };
 		5122A017FFC6E63C17D4EB30 /* Pods_KomoriOtoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8D6A077CB084CC398703D9 /* Pods_KomoriOtoTests.framework */; };
+		6E939FC825D60E75002D3404 /* katanakaji.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FC725D60E74002D3404 /* katanakaji.mp3 */; };
+		6E939FCD25D60EAA002D3404 /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FCC25D60EA9002D3404 /* fire.mp3 */; };
+		6E939FD225D60EC9002D3404 /* heartBeats3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FD125D60EC8002D3404 /* heartBeats3.mp3 */; };
+		6E939FD725D60ED2002D3404 /* Nabe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FD625D60ED2002D3404 /* Nabe.mp3 */; };
+		6E939FDC25D60ED6002D3404 /* keyBoard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FDB25D60ED6002D3404 /* keyBoard.mp3 */; };
+		6E939FE125D60EE0002D3404 /* volcano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FE025D60EE0002D3404 /* volcano.mp3 */; };
+		6E939FE625D60EF2002D3404 /* walk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FE525D60EF2002D3404 /* walk.mp3 */; };
+		6E939FEC25D60F65002D3404 /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FEB25D60F65002D3404 /* wind.mp3 */; };
+		6E939FF125D60FDD002D3404 /* summerMountain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FF025D60FDD002D3404 /* summerMountain.mp3 */; };
+		6E939FF625D610FD002D3404 /* rain_thunder1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E939FF525D610FD002D3404 /* rain_thunder1.mp3 */; };
 		6EC5DADD25C9A6670058FE44 /* heart_beat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EC5DADC25C9A6670058FE44 /* heart_beat.mp3 */; };
 		6EC5DAE225CBD1720058FE44 /* binil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EC5DAE125CBD1720058FE44 /* binil.mp3 */; };
 		6EC5DAE725CBDEF80058FE44 /* car.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EC5DAE625CBDEF80058FE44 /* car.mp3 */; };
@@ -61,6 +71,16 @@
 		26AE06BB32663F7B6A955A8C /* Pods_KomoriOto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KomoriOto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E70054F3AA575210A8BD2E0 /* Pods-KomoriOto-KomoriOtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KomoriOto-KomoriOtoUITests.debug.xcconfig"; path = "Target Support Files/Pods-KomoriOto-KomoriOtoUITests/Pods-KomoriOto-KomoriOtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		497669893A95F731065C77FF /* Pods_KomoriOto_KomoriOtoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KomoriOto_KomoriOtoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E939FC725D60E74002D3404 /* katanakaji.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = katanakaji.mp3; sourceTree = "<group>"; };
+		6E939FCC25D60EA9002D3404 /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
+		6E939FD125D60EC8002D3404 /* heartBeats3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heartBeats3.mp3; sourceTree = "<group>"; };
+		6E939FD625D60ED2002D3404 /* Nabe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nabe.mp3; sourceTree = "<group>"; };
+		6E939FDB25D60ED6002D3404 /* keyBoard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = keyBoard.mp3; sourceTree = "<group>"; };
+		6E939FE025D60EE0002D3404 /* volcano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = volcano.mp3; sourceTree = "<group>"; };
+		6E939FE525D60EF2002D3404 /* walk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walk.mp3; sourceTree = "<group>"; };
+		6E939FEB25D60F65002D3404 /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wind.mp3; sourceTree = "<group>"; };
+		6E939FF025D60FDD002D3404 /* summerMountain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = summerMountain.mp3; sourceTree = "<group>"; };
+		6E939FF525D610FD002D3404 /* rain_thunder1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain_thunder1.mp3; sourceTree = "<group>"; };
 		6EC5DADC25C9A6670058FE44 /* heart_beat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heart_beat.mp3; sourceTree = "<group>"; };
 		6EC5DAE125CBD1720058FE44 /* binil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = binil.mp3; sourceTree = "<group>"; };
 		6EC5DAE625CBDEF80058FE44 /* car.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = car.mp3; sourceTree = "<group>"; };
@@ -140,6 +160,37 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6E939FEA25D60F1E002D3404 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				6EFA17BB25C92B8600563B2E /* bird-and-bag.mp3 */,
+				6EFA17BE25C92B8700563B2E /* bukubuku.mp3 */,
+				6EC5DAE125CBD1720058FE44 /* binil.mp3 */,
+				6EFA17BA25C92B8600563B2E /* cat.mp3 */,
+				6EFA17C325C92B8700563B2E /* dryer.mp3 */,
+				6E939FCC25D60EA9002D3404 /* fire.mp3 */,
+				6EFA17BF25C92B8700563B2E /* ocean-wave.mp3 */,
+				6EC5DAE625CBDEF80058FE44 /* car.mp3 */,
+				6EFA17C025C92B8700563B2E /* sentakuki.mp3 */,
+				6E939FC725D60E74002D3404 /* katanakaji.mp3 */,
+				6E939FD125D60EC8002D3404 /* heartBeats3.mp3 */,
+				6E939FF025D60FDD002D3404 /* summerMountain.mp3 */,
+				6E939FF525D610FD002D3404 /* rain_thunder1.mp3 */,
+				6E939FEB25D60F65002D3404 /* wind.mp3 */,
+				6E939FD625D60ED2002D3404 /* Nabe.mp3 */,
+				6E939FDB25D60ED6002D3404 /* keyBoard.mp3 */,
+				6EC5DADC25C9A6670058FE44 /* heart_beat.mp3 */,
+				6EFA17BD25C92B8600563B2E /* seseragi.mp3 */,
+				6E939FE025D60EE0002D3404 /* volcano.mp3 */,
+				6EFA17C125C92B8700563B2E /* souziki.mp3 */,
+				6E939FE525D60EF2002D3404 /* walk.mp3 */,
+				6EFA17BC25C92B8600563B2E /* toillet.mp3 */,
+				6EFA17C425C92B8700563B2E /* tv.mp3 */,
+				6EFA17C225C92B8700563B2E /* umbrella.mp3 */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
 		6EFA176A25C9206800563B2E = {
 			isa = PBXGroup;
 			children = (
@@ -176,20 +227,7 @@
 				6EFA177F25C9206900563B2E /* Assets.xcassets */,
 				6EFA178125C9206900563B2E /* LaunchScreen.storyboard */,
 				6EFA178425C9206900563B2E /* Info.plist */,
-				6EFA17BB25C92B8600563B2E /* bird-and-bag.mp3 */,
-				6EFA17BE25C92B8700563B2E /* bukubuku.mp3 */,
-				6EC5DAE125CBD1720058FE44 /* binil.mp3 */,
-				6EFA17BA25C92B8600563B2E /* cat.mp3 */,
-				6EFA17C325C92B8700563B2E /* dryer.mp3 */,
-				6EFA17BF25C92B8700563B2E /* ocean-wave.mp3 */,
-				6EC5DAE625CBDEF80058FE44 /* car.mp3 */,
-				6EFA17C025C92B8700563B2E /* sentakuki.mp3 */,
-				6EC5DADC25C9A6670058FE44 /* heart_beat.mp3 */,
-				6EFA17BD25C92B8600563B2E /* seseragi.mp3 */,
-				6EFA17C125C92B8700563B2E /* souziki.mp3 */,
-				6EFA17BC25C92B8600563B2E /* toillet.mp3 */,
-				6EFA17C425C92B8700563B2E /* tv.mp3 */,
-				6EFA17C225C92B8700563B2E /* umbrella.mp3 */,
+				6E939FEA25D60F1E002D3404 /* mp3 */,
 			);
 			path = KomoriOto;
 			sourceTree = "<group>";
@@ -332,6 +370,7 @@
 			files = (
 				6EC5DAE725CBDEF80058FE44 /* car.mp3 in Resources */,
 				6EFA17C825C92B8700563B2E /* seseragi.mp3 in Resources */,
+				6E939FD725D60ED2002D3404 /* Nabe.mp3 in Resources */,
 				6EFA178325C9206900563B2E /* LaunchScreen.storyboard in Resources */,
 				6EFA17AC25C923C200563B2E /* TableViewCell.xib in Resources */,
 				6EFA17B625C929FA00563B2E /* TitleTableViewHeaderView.xib in Resources */,
@@ -339,13 +378,22 @@
 				6EFA17CD25C92B8700563B2E /* umbrella.mp3 in Resources */,
 				6EFA17CC25C92B8700563B2E /* souziki.mp3 in Resources */,
 				6EFA17C525C92B8700563B2E /* cat.mp3 in Resources */,
+				6E939FF625D610FD002D3404 /* rain_thunder1.mp3 in Resources */,
 				6EC5DADD25C9A6670058FE44 /* heart_beat.mp3 in Resources */,
+				6E939FDC25D60ED6002D3404 /* keyBoard.mp3 in Resources */,
+				6E939FF125D60FDD002D3404 /* summerMountain.mp3 in Resources */,
 				6EFA17C625C92B8700563B2E /* bird-and-bag.mp3 in Resources */,
+				6E939FD225D60EC9002D3404 /* heartBeats3.mp3 in Resources */,
+				6E939FE125D60EE0002D3404 /* volcano.mp3 in Resources */,
+				6E939FC825D60E75002D3404 /* katanakaji.mp3 in Resources */,
 				6EC5DAE225CBD1720058FE44 /* binil.mp3 in Resources */,
 				6EFA178025C9206900563B2E /* Assets.xcassets in Resources */,
 				6EFA17C725C92B8700563B2E /* toillet.mp3 in Resources */,
 				6EFA17C925C92B8700563B2E /* bukubuku.mp3 in Resources */,
+				6E939FEC25D60F65002D3404 /* wind.mp3 in Resources */,
 				6EFA17CA25C92B8700563B2E /* ocean-wave.mp3 in Resources */,
+				6E939FE625D60EF2002D3404 /* walk.mp3 in Resources */,
+				6E939FCD25D60EAA002D3404 /* fire.mp3 in Resources */,
 				6EFA17CB25C92B8700563B2E /* sentakuki.mp3 in Resources */,
 				6EFA17CF25C92B8700563B2E /* tv.mp3 in Resources */,
 				6EFA177E25C9206800563B2E /* Main.storyboard in Resources */,
