@@ -181,41 +181,21 @@ class TableViewCell: UITableViewCell,AVAudioPlayerDelegate {
         
         print(indexPath.row,"Button Tap")
 
-//        endAdController()
-        switch sender.tag {
-
-        case 10:
-            endAdController()
-        case 11:
-            endAdController()
-        case 12:
-            endAdController()
-        case 13:
-            endAdController()
-        case 14:
-            endAdController()
-        case 15:
-            endAdController()
-        case 16:
-            endAdController()
-        case 17:
-            endAdController()
-        case 18:
-            endAdController()
-        case 19:
-            endAdController()
-
-        default:
-            return
-        }
-        cellDelegate?.adButtonTapped(sender.tag)
-        
+        endAdController()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        flg = false
+        adFlg = true
+        adButton.isHidden = false
     }
     
 }
