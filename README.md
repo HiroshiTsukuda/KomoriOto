@@ -54,7 +54,14 @@
 ・マナーモードでも再生すると音が流れます。
 ・音量には十分ご注意ください。
 
+[楽曲提供]
+アプリ内の効果音、楽曲は以下のサイトのものを使用させていただいております。
 
+・効果音ラボ　「https://soundeffect-lab.info/」
+
+・OtoLogic　「https://otologic.jp/」
+
+・　「https://taira-komori.jpn.org/freesound.html」
 
 
 ・プライバシーポリシー・
